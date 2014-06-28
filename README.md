@@ -1,7 +1,7 @@
 DiySolar
 ========
 
-Do it yourself Solar by ElectroSolarWare. 
+Do-it-yourself Solar by ElectroSolarWare. 
 Range of ESW modules for easy installation of Solar Voltaic Panels.
 NO electrician needed, plug and play installation.
 Completely safe, fully protected against electric shock and fire.
