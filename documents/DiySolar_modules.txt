@@ -1,0 +1,108 @@
+DiySolar:			Do-it-yourself [Smart] Solar.
+ESW:				ElectroSolarWare.
+Title:				DiySolar modules.
+Conception : 		25/04/2014.
+First iteration: 	26/06/2014.
+This document: 		10/07/2014.
+Author: 			Edwin
+Version: 			0.10
+
+DiySolar Modules:
+
+a) DiySolar Smart Energy Director/Gateway: (not essential)
+	DIY Plug-in for SCADA (supervisory control and data acquisition) functionality.
+	Cloud gateway for rest of system modules.
+	Close to network switch for LAN/Internet/WiFi access.
+	Security with HTTPS and internal Firewall.
+	Secure API for Cloud server and third party access.
+	HTML[5] server for local dashboard, commissioning and fault-finding.
+	Future control load switches for load shedding.
+	Rate of changing control with local grid support when isolated from supply grid.
+	Incomer control with DiySolar DB Auxiliary over mains wiring with PLC.
+	2G Flash Drive for temporary storage, buffering, and server pages.
+	SD Memory Card interface for extra storage and dumping of off-line data.
+	Real-time clock. (clock server for rest of system)
+	
+
+b) DiySolar Smart DB Auxiliary External: (not essential, needed for UPS function)
+	Install by electrician only.
+	Next to DB (distribution board) to control incomer and some loads. 
+	Uses Rogowsky coils for easy installation.
+	Automatic incomer disconnect/isolation for islanding local supply during outages. (UPS function)
+	Automatic sync and reconnect after outage. (No power interruption on reconnect.)
+	Check metering for account verification.
+	Use PLC communications to Energy Director/Gateway for measurement and control.
+	One, two or three additional load switches for load shedding. (independent for better remote control - size ???)
+	Could be used for virtual power-station with the above. (See cloud power green energy.) 
+	Three units needed for 3-phase. (? communicate via neutral for single interface to director/gateway ?)
+	Powered from either the load or grid sides.  
+
+b1) DiySolar Smart Distribution Board Auxiliary: 
+	Miniature second incarnation of external module above.
+	Maybe replace RCD (residual current detector) unit functionality in DB to ease wiring requirement. 
+	RCD & Isolator & Contactor & measurements in one unit - same space (dimensions) and connections.
+	Install by electrician only (on incomer).
+	Cut installation time by 3/4.
+	Everything from above external unit.
+
+c) DiySolar Smart Micro Inverter (SMI):
+	Rating input:  230VAC 1W. (Standby and start-up)
+	Rating supply: 110VDC 10A.
+	Rating output: 250VAC 460VA synchronous. (Absolute maximum ratings.)
+	Double insulation to eliminate earth leakage and electrocution risks.
+	Start-up/idle power from Line (grid) side.
+	Temporary start-up power from the DC side with manual start button. (Used for forced reset/registering also.)
+
+c1) Installation and commissioning instructions:
+1) Cover solar voltaic panel so that NO light can reach it. (Use tarpaulin or blanket.) 
+	It is deadly dangerous with high DC voltages and currents while exposed to light. 
+2) Connect black wire to black terminal by pushing down on connector button, inserting stripped wire and releasing button.
+	Connect red wire to red terminal. 
+	See step by step sketch 1.
+3) Use supplied screws to mount DiySolar module on solar panel frame. 
+	Use existing holes and mounting tabs. 
+	See sketch 2.
+4) Insert plug into mains socket. Switch on when a switched socket used. 
+5) Remove solar voltaic panel cover. 
+6) Press boot/reset switch on master panel or director to register the new panel in the DiySolar system. 
+	(On this panel if its the only one, to make it master.)
+7) Operational indication lights: 
+	Orange shows Ready status with available power indication.
+	Green shows Run status and generating power.
+	Both lights off: no power to unit. (Check that it is plugged in and switched on.)
+	Orange flashing slowly: Mains connected and on standby.
+	Orange and green flashing slowly: Communications and registered, still on standby.
+	Orange on and green off: Energy ready for delivery, not registered.
+	Green flashing: Rate of flashing equal to energy delivered up to maximum when it stays on.
+	Green on and orange flashing: One of the module limits has been reached - protecting mode warning. 
+
+d) DiySolar Smart Battery Micro Inverter (SBMI): (Similar to Smart Micro Inverter.)
+	Rating input:  230VAC 500W (Charging), 1W (Standby and start-up.) (?1500W charging? 0.125C = 15A)
+	Rating supply: 110VDC 10A.
+	Rating output: 230VAC 460VA  synchronous (Absolute maximum ratings.)
+	Any battery technology. (Can be used for any future technology with SW updates from cloud.)
+	Charger with battery temperature feedback. 
+	Under director or master control. (Will limit charging current every cycle to keep net stability.)
+	Current, voltage and temperature limited for self-protection.
+	Green run light stays on and orange ready light flashing when charging (at rate of flashing.).
+	Rate of changing controlled from Energy Director Gateway with local grid support when isolated.
+	Uses TOU (time of use) tariffs optimisation when on grid depending function min cost or max backup.
+	Up to 9 * 1kwh batteries 120Ah@12V*80% discharge/BMI for 18 hours at 500VA (0.04C = 5A).
+	Optimised for three times higher charge to discharge current (18h load / 6h sun).
+
+e) DiySolar Smart Wind Micro Inverter (SWMI): (Similar to above.)
+	Can use car alternator @ 60A > 500w with DiySolar control.
+	Must use batteries or e-car as storage for full efficiency.
+	
+e) DiySolar Smart Electric Car Inverter (SECI): (Similar to above)
+	High wattage - 3 to 6 kW.
+
+f) DiySolar Smart Load Control (SLC): (optional)
+	Home automation - slaves
+	Load current monitor - energy, phase and harmonics.
+	Two loads @ 16A maximum total.
+	Operation and indicator lights:
+		Orange slowly flashing - powered.
+		Green slowly flashing - under control of master or director.
+		Green on disconnected load one.
+		Orange on disconnected load two.

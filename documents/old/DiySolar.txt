@@ -1,9 +1,10 @@
-DiySolar = Do-it-yourself Solar.
-ESW = Electro Solar Ware.
-Conception : 25/04/2014.
-This document: 26/06/2014.
-Author: Edwin
-Version: 0.10
+DiySolar:			Do-it-yourself [Smart] Solar.
+ESW:				ElectroSolarWare.
+Conception : 		25/04/2014.
+First iteration: 	26/06/2014.
+This document: 		10/07/2014.
+Author: 			Edwin
+Version: 			0.10
 
 DiySolar Idea: 
 a) New arm cortexM4 processors
@@ -11,60 +12,64 @@ a) New arm cortexM4 processors
 	2) Do all power conversions needed, extensive use of digital signal processing.
 	3) Ethernet IEEE802.3 on Energy Director Gateway modules.
 
-b) Micro inverters to directly convert DC to correct AC for line. (DiySolar-SMI [-BMI] [-WMI] [-ECI])
+b) Smart Micro Inverters (SMIs) to directly convert DC to correct AC for line/grid. (DiySolar-SMI [-SBMI] [-SWMI] [-SECI] [-SLC].)
 	1) Standard plug into Mains supply socket on any local circuit. 
-		RSA - IEC N-Type.
+		RSA - IEC N-Type (international standard from 1986) with 2 to 3m leads available.
 		DIY, thus much lower installation & maintenance costs.
-		2 to 3m leads available
 	2) Easy mix and match - actual P&P (plug and play).
-	3) All safety in each module, absolute user protection.
+	3) Smart because the geek is built into the unit software and the user does not have to be one.
+	4) Any solar voltaic panels can be accommodated and matched.
+		MPPC (maximum power point control) via digital control of all conversions.
+	5) Series solar voltaic panels combinations possible, limited to maximum power.
+	6) All safety in each module, absolute user protection.
 		Double insulated for safety.
 		Lightning protected - good earthing recommended for user safety.
 		Manual boot connection (break-before-make) for standalone start or registering.
 		Impedance check for manual start - before power for safety.
 		Zero load shut-down for safety. (0.1% minimum load = 2mA)
-	4) Any solar voltaic panels can be accommodated and matched.
-		MPPC (maximum power point control) via digital control of all conversions.
-	5) Series solar voltaic panels combinations possible, limited to maximum power.
-	6) Internal power, current and temperature limited.
-	7) Default single phase (1ph)
-		Times three parallel for three phase (3ph). (See Director below.)
-	8) 460W maximum power = 2A in-phase injected into 230V supply.
-	9) All communications to cloud, no operator keyboard or display - uses application.
+	7) Internal power, current and temperature limited for self protection.
+	8) Default single phase (1ph) 50Hz and 230VAC (volt alternating current).
+		Times three parallel for three phase (3ph). (See Energy Director below.)
+	9) 460W maximum power = 2A in-phase injected into 230VAC supply.
+	9) All communications to cloud, no operator keyboard or display - uses browser or application.
 	10) Each unit unique address and completely controllable.
 	11) Complete SW solution with automatic reprogramming.
 	12) Full access control with 128bit AES encryption throughout.
 	13) IP67 enclosures for mounting on panels directly.
 	14) 95% efficiency at full power, > 90% at half power.
-	15) Each unit continuously monitors currents, voltages in and out
+	15) Each unit continuously monitors currents and voltages, in and out.
 	16) Efficiency, power flow from each unit calculated, accumulated, metered.
-	17) Standalone operation - any unit can become master when no director - controls all others.
-	18) Automatic configuration to any world standard 50 or 60Hz, 115V or 230V, or 400V 3-phase.
+	17) Standalone operation - any unit can become master when no Energy Director used and then controls all others.
+	18) Automatic configuration to any world standard 50 or 60Hz, 115V or 230V single phase, or 400V 3-phase.
 
 c) Ideal for:
 	1) Making hay while the sun shines - literally! 
 	2) SOHO (small office,home office) where most of the energy used is during the day.
-	3) Small retail when keeping to office/daylight hours.
+	3) Small retail when keeping to office/daylight hours. (Lights, display boards, tills)
 	4) Small manufacturing (not energy intensive) with lights and small appliances.
-	5) 1.8kW to 5.4kW single phase (optimal range).
-	6) 5.4kW to 11kW three phase (optimal range).
+	5) 1.8kW to 5.4kW peak single phase (optimal range for initial installation).
+	6) 5.4kW to 11kW peak three phase (optimal range for initial installation).
 	7) With incremental installation this can be extended infinitely.
-	8) Where grid power unavailable. (Rural Africa.)
-	9) Homes with swimming-pools. (Pump runs 8h during day-time.)
-	10) Homes with air-conditioning and/or underfloor heating. (Stays on for thermostat control.)
+	8) Off-grid (where grid power unavailable) for schools and other education in rural Africa.
+	9) Off-grid small retail. (like fridges where good insulation retains temperature during night)
+	10) Homes with swimming-pools. (Pump runs 8h during day-time.)
+	11) Homes with air-conditioning and/or underfloor heating. (Stays on during day for thermostat control.)
 
 d) Limitations:
 	1) Full sun for whole day during winter and summer.
-		Position for same power in winter and summer. (Any six months apart) (double sine curve, 6 month period.)
-		Use application - calculator to get optimal inclination (angle) for yearly power optimisation.
+		Position for same power in winter and summer. (Any six months apart) (double sine curve with 6 month period.)
+		Use application calculator to get optimal inclination (angle) for yearly power optimisation.
 		Roof mounting optimal for many reasons except for ease of maintenance and installation.
-		True North/South facing dependent on latitude. (Always facing equator.)
+		True North/South facing dependent on latitude. (Always facing equator at right angles.)
+		Little bit West facing to have more power in the afternoon (15 degrees for each hour shift.) Reduced total energy. 
 	2) Usable energy mostly between 9:00 and 15:00 when the above conditions.
 	3) Performance dependant on latitude (North-equator-south.)
 	4) Big area installation. 
 		Maximum power for good commercial panels are 200Wp/m2.
 		Small installation of 1.8kW will take at least 10m2. (See costs below.)
-	5) 25 years life and 5-6 year payback for solar voltaic panel alone.
+		Optimal installation on any roof because of shading, space and limited access considerations.
+		Wind loading an important consideration for frame or rack on roof.
+	5) 25 Years life and 5-6 year payback for solar voltaic panel alone.
 	6) Allow for 5% of initial cost as maintenance cost pa. (10% with batteries.)
 	7) Batteries more than triple cost and size of installation.
 		Doubling the number of panels needed plus the batteries for 12 hours of operation.
@@ -72,8 +77,8 @@ d) Limitations:
 		Batteries have a very limited life of 5 to 7 years and then need replacement.
 		Batteries need lots of maintenance and 3 to 4 replacements during life of system.
 		The above pushes the lifetime cost to nearly (to more than, dependant on function,) 
-			double the initial cost with batteries.
-		This can push the payback period to infinity. 
+		double the initial cost with batteries.
+		This can push the payback period (cost parity with grid power) to infinity. 
 
 e)	Costs: 
 	1) 6h Supply with High quality panels @ 200Wp/m2: 
@@ -113,19 +118,19 @@ e)	Costs:
 		5.4		120		24000	12000		10000		21600 + 7200	75000		165000
 	
 f) Module estimated costs (1.333$=1.000euro=R15.00):
-	1) DiySolar Energy Director:	$800.
-	2) DiySolar micro inverter: 	$200.
-	3) DiySolar battery micro:		$600.
-	4) DiySolar battery (1kWh):		$200.
-	5) DiySolar load control:		$200.
-	6) DiySolar DB auxiliary (int):	$600. (miniature)
-	7) DiySolar DB auxiliary (ext):	$400.
-	8) DiySolar wind inverter: enquire
-	9) DiySolar e-car inverter: enquire
+	1) DiySolar Smart Energy Director:		$800.
+	2) DiySolar Smart Micro Inverter: 		$200.
+	3) DiySolar Smart Battery Inverter:		$600.
+	4) DiySolar Battery (commercial 1kWh):	$200.
+	5) DiySolar Smart Load Control:			$200.
+	6) DiySolar Smart DB auxiliary (int):	$600. (miniature)
+	7) DiySolar Smart DB auxiliary (ext):	$400.
+	8) DiySolar Smart Wind Micro Inverter:	enquire
+	9) DiySolar Smart E-Car Inverter:		enquire
 	
 DiySolar Modules:
 
-a) DiySolar Energy Director/Gateway: (not essential)
+a) DiySolar Smart Energy Director/Gateway: (not essential)
 	DIY Plug-in for SCADA (supervisory control and data acquisition) functionality.
 	Cloud gateway for rest of system modules.
 	Close to network switch for LAN/Internet/WiFi access.
@@ -140,7 +145,7 @@ a) DiySolar Energy Director/Gateway: (not essential)
 	Real-time clock. (clock server for rest of system)
 	
 
-b) DiySolar DB Auxiliary External: (not essential, needed for UPS function)
+b) DiySolar Smart DB Auxiliary External: (not essential, needed for UPS function)
 	Install by electrician only.
 	Next to DB (distribution board) to control incomer and some loads. 
 	Uses Rogowsky coils for easy installation.
@@ -153,7 +158,7 @@ b) DiySolar DB Auxiliary External: (not essential, needed for UPS function)
 	Three units needed for 3-phase. (? communicate via neutral for single interface to director/gateway ?)
 	Powered from either the load or grid sides.  
 
-b1) DiySolar Distribution Board Auxiliary: 
+b1) DiySolar Smart Distribution Board Auxiliary: 
 	Miniature second incarnation of external module above.
 	Maybe replace RCD (residual current detector) unit functionality in DB to ease wiring requirement. 
 	RCD & Isolator & Contactor & measurements in one unit - same space (dimensions) and connections.
@@ -161,7 +166,7 @@ b1) DiySolar Distribution Board Auxiliary:
 	Cut installation time by 3/4.
 	Everything from above external unit.
 
-c) DiySolar micro inverter:
+c) DiySolar Smart Micro Inverter (SMI):
 	Rating input:  230VAC 1W. (Standby and start-up)
 	Rating supply: 110VDC 10A.
 	Rating output: 250VAC 460VA synchronous. (Absolute maximum ratings.)
@@ -169,7 +174,23 @@ c) DiySolar micro inverter:
 	Start-up/idle power from Line (grid) side.
 	Temporary start-up power from the DC side with manual start button. (Used for forced reset/registering also.)
 
-c1) Installation and commissioning instructions:
+c1)	Operation:	
+	Smart Micro Inverters generate current in-phase with the voltage from the AC (Alternating Current) grid (Authority).
+	P = V * I.  The real power delivered is the current times the voltage. 
+	Measured in Watt of kW (kilo Watt = 1000W). 
+	For AC when in-phase and using RMS (Root Mean Squared) measurements.
+	When out of phase it is call apparent power measured in kVA (kilo Volt Ampere).
+	E = P * t.  The energy is real power times time, accumulated over time.
+	Measured in kWh (kilo Watt hour) units. 
+	The electrical devices on the local DB (Distribution Board) will then use this generated current in preference to the grid current.
+	This is balanced by OHM's law and will thus lower or replace the current from the grid while generating (sun shining).
+	Less energy is used from the grid and this will directly and immediately result in a lower energy bill from the authority.
+	The reduction in the energy bill from the Authority is used for calculating the payback or break-even period.
+	The full cost of the installation is traded off against the energy costs from the authority with escalation, until parity is reached.
+	The pay-back period is usually in region of five years, where after all the energy generated, less a few percent for maintenance cost,  
+	for the life of the installation, about 25 years, is for full profit.
+
+c2) Installation and commissioning instructions:
 1) Cover solar voltaic panel so that NO light can reach it. (Use tarpaulin or blanket.) 
 	It is deadly dangerous with high DC voltages and currents while exposed to light. 
 2) Connect black wire to black terminal by pushing down on connector button, inserting stripped wire and releasing button.
@@ -192,7 +213,7 @@ c1) Installation and commissioning instructions:
 	Green flashing: Rate of flashing equal to energy delivered up to maximum when it stays on.
 	Green on and orange flashing: One of the module limits has been reached - protecting mode warning. 
 
-d) DiySolar Battery micro [inverter]: (Similar to solar micro inverter)
+d) DiySolar Smart Battery Micro Inverter (SBMI): (Similar to Smart Micro Inverter.)
 	Rating input:  230VAC 500W (Charging), 1W (Standby and start-up.) (?1500W charging? 0.125C = 15A)
 	Rating supply: 110VDC 10A.
 	Rating output: 230VAC 460VA  synchronous (Absolute maximum ratings.)
@@ -206,14 +227,14 @@ d) DiySolar Battery micro [inverter]: (Similar to solar micro inverter)
 	Up to 9 * 1kwh batteries 120Ah@12V*80% discharge/BMI for 18 hours at 500VA (0.04C = 5A).
 	Optimised for three times higher charge to discharge current (18h load / 6h sun).
 
-e) DiySolar Wind micro [inverter]: (Similar to above.)
+e) DiySolar Smart Wind Micro Inverter (SWMI): (Similar to above.)
 	Can use car alternator @ 60A > 500w with DiySolar control.
 	Must use batteries or e-car as storage for full efficiency.
 	
-e) DiySolar Electric car [inverter]: (Similar to above)
+e) DiySolar Smart Electric Car Inverter (SECI): (Similar to above)
 	High wattage - 3 to 6 kW.
 
-f) DiySolar Load control: (optional)
+f) DiySolar Smart Load Control (SLC): (optional)
 	Home automation - slaves
 	Load current monitor - energy, phase and harmonics.
 	Two loads @ 16A maximum total.

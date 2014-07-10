@@ -1,0 +1,84 @@
+ESW = ElectroSolarWare
+DiySolar product range.
+DiySolarWare = do-it-yourself Solar Ware
+
+Firmware-software-cloud-applications
+
+
+site DiySolar 
+visitor access  - Solar calculator to do most of solar voltaic calculations in a transparent way.
+				- Energy, Cost and Payback calculated for your geographical Latitude.
+				- Energy optimisation calculations for inclination, summer or winter loads and shading.
+				- Battery calculations
+				- Supplier database
+				- Real testing results database
+				- Aggregate customer experience results database per region or country
+				- Orders & Pricing of DiySolar modules.
+				- Blog
+				- FAQ's
+
+customer access - needs registration to enable encryption, decryption, etc. (See privacy policy.)
+				- All real-time energy data from own site encrypted, runs from application also.
+				- RSS feed of general events and data, and site news and blog.
+				- check metering for account verification.
+				- history on energy saved - carbon saved - and with the input of costs supplied, 
+					the current daily, weekly and monthly saving and current payback period.
+				- history on excess/wasted energy - that could not be used because of low load.
+				- software/firmware downloads and upgrades.
+				- history of events and alarms.
+				- solar voltaic panel condition for each set of panels separately
+					age, current delivery and efficiency, peak delivery and other data - like shading.
+				- battery condition for each stack separate.
+					age, current charge, peak delivery, capacity left relative to new installation.
+				- customer blog
+				- FAQ's
+
+Research and educational access - some aggregate data per region/country/world available to registered institutions 
+API-
+news-
+blog-
+Faq-
+Privacy policy-
+
+
+Firmware:
+Each type of micro inverter communicates to the Energy Director/gateway over the power connection.
+	Uses CENELEC B & C or FCC band, ITU G.9903 G3-PLC (power-line communications) open standard.
+Synchronisation & SCADA functions.
+Internal safety - protection of module against over-current, over-temperature, over-voltage, tampering.
+	component failure and functional specification check during start-up, lockout shut-down on error.
+	earth leakage (residual current) and high earth voltage detection and reporting.
+External safety - Shut-down with no load impedance, no automatic start-up without system communication.
+All internal power conversions driven with digital signal processing.
+Monitor all voltages and currents on the AC and DC sides, calculate all powers and energy, and from that
+irradiation, panel and overall efficiencies. 
+
+Energy Director/Gateway:
+HTML5 server for local control, configuration, commissioning and dashboard.
+API for communications to cloud or any other device with security access.
+Overall safety of system.
+Overall security of system.
+Registers all slaves on local system.
+Overall automatic software updates and version control.
+Three phase synchronisation functions.
+Residual current summation - and trip on safety limit with manual reset required.
+Calculates overall power and energy flow, efficiencies.
+Consolidate stored power and capacities.  
+Calculate backup times from capacities and load currents.
+Real-time Clock server for rest of modules - timestamps.
+Data dump to SD memory card.
+File system on 2G Flash Drive - current software all modules - off-line data storage.
+
+DiySolar Distribution Board Auxiliary:
+Communicates to the Energy Director/gateway over the power connection.
+	Uses CENELEC B & C or FCC band, ITU G.9903 G3-PLC (power-line communications) open standard.
+Synchronisation & SCADA functions.
+Internal safety - protection of module against over-temperature, over-voltage and tampering.
+	component failure and functional specification check during start-up, lockout shut-down on error.
+All internal power conversions driven with digital signal processing.
+Monitor all voltages with phase on the AC Load and Grid sides, current and residual current (Earth leakage).
+Calculate all power flow and integral thereof (energy).
+Monitor Grid current and trip grid connection if big negative for half cycle. (Grid outage - UPS function.)
+Sync internal phase with grid before reconnect.
+Monitor residual current and trip everything if over limit.
+Monitor switched loads current.
