@@ -3,51 +3,53 @@ ESW:				ElectroSolarWare.
 Title:				DiySolar idea.
 Conception : 		25/04/2014.
 First iteration: 	26/06/2014.
-This document: 		10/07/2014.
+This document: 		27/08/2014.
 Author: 			Edwin
-Version: 			0.10
+Version: 			0.11
 
 DiySolar main ideas:
  
-a) Smart Micro Inverters (SMIs) to directly convert DC to correct AC for line/grid. (DiySolar-SMI module.)
+a) Smart Micro Inverters to directly convert DC to correct AC for line/grid. (DiySolar-SMI module.)
 	1) Standard plug into Mains supply socket on any local circuit. 
 		RSA - IEC N-Type (international standard from 1986) with 2 to 3m leads available.
 		DIY, thus much lower installation & maintenance costs.
 	2) Easy mix and match - actual P&P (plug and play).
 	3) Smart because the geek is built into the unit software and the user does not have to be one.
 	4) Any solar voltaic panels can be accommodated and matched.
-		MPPC (maximum power point control) via digital control of all conversions.
+		MPPC (maximum power point control) via digital control of all power conversions.
 	5) Series solar voltaic panels combinations possible, limited to maximum power.
 	6) Full safety features in each module for absolute user protection.
 		Double insulated for safety.
-		Lightning protected - good earthing recommended for user safety.
+		Lightning protected - good rack/frame earthing recommended for user safety.
 		Manual boot connection (break-before-make) for standalone start or registering.
 		Impedance check for manual start - before power for safety.
 		Zero load shut-down for safety. (0.1% minimum load = 2mA)
 	7) Internal power, current and temperature limited for self protection.
 	8) Default single phase (1ph) 50Hz and 230VAC (volt alternating current).
-		Times three parallel for three phase (3ph). (See Energy Director below.)
+		Three phase (3ph) on each of three phases with no need to balance. (See Energy Director below.)
 	9) 460W maximum power = 2A in-phase injected into 230VAC supply.
-	9) All communications to cloud, no operator keyboard or display - uses on-line browser or mobile application.
-	10) Each unit unique address and completely controllable.
-	11) Complete SW solution with automatic reprogramming.
-	12) Full access control with 128bit AES encryption throughout.
-	13) IP67 enclosures for mounting on panels directly.
-	14) 95% efficiency at full power, > 90% at half power.
-	15) Each unit continuously monitors currents and voltages, in and out.
-	16) Efficiency, power flow from each unit calculated, accumulated, metered.
-	17) Standalone operation - any unit can become master when no Energy Director used and then controls all others.
-	18) Automatic configuration to any world standard 50 or 60Hz, 115V or 230V single phase, or 400V 3-phase.
-	19) Many extension and support modules for future expansion (see modules). DIYS [-SED] [-SEDA] [-SBMI] [-SWMI] [-SECI] [-SLC].
+	10) All communications to cloud, no operator keyboard or display - uses on-line browser or mobile application.
+	11) Each unit unique address and completely controllable.
+	12) Complete SW solution with automatic reprogramming from cloud.
+	13) Full access control with 128bit AES encryption throughout.
+	14) IP67 enclosures for mounting on bottom inside of panel frames directly.
+	15) 95% efficiency at full power, > 90% at half power.
+	16) Each unit continuously monitors currents and voltages, in and out.
+	17) Efficiency, power flow from each unit calculated, accumulated and metered.
+	18) Standalone operation - any unit can become master when there is no Energy Director in use.
+	19) Master unit then controls all others on the local network with the same login/password.
+	20) Automatic configuration to any world standard 50 or 60Hz, 115V or 230V single phase, or 400V 3-phase.
+	21) Many extension and support modules for future expansion (see modules tab/file). 
+	22) DIYS Modules: DIYS [-SED] [-SEDA] [-SBMI] [-SWMI] [-SECI] [-SLC].
 
 b) Ideal for:
 	1) Making hay while the sun shines - literally! 
-	2) SOHO (small office,home office) where most of the energy used is during the day.
+	2) SOHO (small office, home office) where most of the energy used is during the day.
 	3) Small retail when keeping to office/daylight hours. (Lights, display boards, tills)
 	4) Small manufacturing (not energy intensive) with lights and small appliances.
-	5) 1.8kW to 5.4kW peak single phase (optimal range for initial installation).
-	6) 5.4kW to 11kW peak three phase (optimal range for initial installation).
-	7) With incremental installation this can be extended infinitely.
+	5) 1.8kW to 3.6kW peak single phase (optimal range (10-20m2) for initial installation).
+	6) 5.4kW to 11kW peak three phase (optimal range (30-60m2) for initial installation).
+	7) With incremental installation both can be extended infinitely.
 	8) Off-grid (where grid power unavailable) for schools and other education in rural Africa.
 	9) Off-grid small retail. (like fridges where good insulation retains temperature during night)
 	10) Homes with swimming-pools. (Pump runs 8h during day-time.)
@@ -55,42 +57,60 @@ b) Ideal for:
 	12) Saving our planet a little bit at a time.  Burn less coal and other fossil fuels.
 
 c) Limitations:
-	1) Full sun for whole day during winter and summer.
-		Position for same power in winter and summer. (Any six months apart) (double sine curve with 6 month period.)
-		Use application calculator to get optimal inclination (angle) for yearly power optimisation.
+	1) Needs full sun for whole day during winter and summer.
+		Position for same peak or day power on winter and summer solstice.
+		Gives double sine curve with 6 month period and peaks (17% higher) on the equinoxes.
+		Use application calculator to get optimal inclination (angle) for yearly power optimisation for application.
+		Tilt towards winter sun by positive latitude plus 10 degrees from horizontal for even performance during year.
 		Roof mounting optimal for many reasons except for ease of maintenance and installation.
-		True North/South facing dependent on latitude. (Always facing equator at right angles.)
-		Little bit West facing to have more power in the afternoon (15 degrees for each hour shift.) Reduced total energy. 
-	2) Usable energy mostly between 9:00 and 15:00 with the above conditions fulfilled.
-	3) Performance dependant on latitude (North-equator-south.)
-	4) Big area installation. 
+		Must be true North/South facing dependent on +/- latitude. (Always facing equator at right angles.)
+		Little bit West facing to have more power in the afternoon (15 degrees for each hour shift.) 
+		Little bit East facing to have more power in the morning to substitute time-of-use peak tariffs in high demand season.
+		Both the above tilts cause reduced total yearly energy depending on the amount of tilt.
+	2) Usable energy mostly between 9:00 and 15:00 with the above conditions fulfilled (8:00 - 16:00 in summer).
+	3) Performance very dependant on latitude with sunny tropics the most profitable. (North-equator-south.)
+	4) Rotating on daily axis (parallel to earth axis) improves total yearly energy by about 17%.
+		Needs at least double spacing to eliminate most shadows.
+		Double the area and frame used for installation.
+		Targeted applications thus not ideal because of the waste of ideal but limited roof space.
+		Mechanical devices (hinges and actuators) and electronic controls needed.
+		Service life, servicing and maintenance of the above can be problematic and expensive.
+	5) Rotation on daily and yearly axes improves total yearly yield by about 25% to 35% depending spacing.
+		Needs more than double spacing to eliminate most shadows. (2.5 times panel area.)
+		Double the devices needed to control the two axes.
+		Other disadvantages as mentioned above for single axis rotation.
+	6) Big area installation. 
 		Maximum power for a good commercial panel is 200Wp/m2.
 		Small installation of 1.8kW will take at least 10m2 panels. (See DiySolar_costs tab/file.)
 		Optimal installation on any roof because of shading, space and limited access considerations.
-		Wind loading an important consideration for frame or rack, on roof.
-	5) 25 Years life and 5-6 year payback for solar voltaic panel alone.
-	6) Allow for 5% of initial cost as maintenance cost pa. (10% with batteries.)
-	7) Batteries more than triple cost and size of installation.
-		Double the number of panels needed plus the batteries for 12 hours of operation.
+		Most roofs already slope in the direction of the winter sun. 
+		Wind loading an important consideration for frame or rack on roof.
+		Extra loading on roof must be taken into account.
+	7) Maximum of 5 units per extension cord (10A) and 10 units total on one plug circuit (20A).
+	8) 25 Years life and 5-6 year payback for solar voltaic panel alone.
+	9) Allow for 5% of initial cost as maintenance cost pa. (10% with batteries.)
+	10) Batteries more than triple cost and size of initial installation.
+		Double the number of panels needed plus batteries to store the energy for 12 hours of operation.
 		Double the above again for 24h constant load operation with no cloudy backup.
 		Batteries have a very limited life of 5 to 7 years and then need replacement.
 		Batteries need lots of maintenance and 3 to 4 replacements during life of system.
-		The above pushes the lifetime cost to nearly (to more than, dependant on function,) 
+		The above pushes the lifetime cost to nearly (or to more than, dependant on function,) 
 		double the initial cost with batteries.
 		This will push the payback period (cost parity with grid power) to infinity. 
 
 d) Electrical Operation:	
 	1) Smart Micro Inverters automatically generate current in-phase with the voltage 
-		from the AC (Alternating Current) grid (Authorities).
-	2) Power: P = V * I.  The real power delivered is the current times the voltage. 
+		from the AC (Alternating Current) grid from the authorities. (Co-generation for local consumption.)
+	2) Power: P = V * I.  The real power supplied or delivered is the current times the voltage. (Dependent on direction.) 
 		Measured in Watt of kW (kilo Watt = 1000W). 
 		For AC when in-phase and using RMS (Root Mean Squared) measurements.
 		When out of phase it is called apparent power and measured in kVA (kilo Volt Ampere).
-	3) Energy: E = P * t.  The energy is real power times time, accumulated over time.
+	3) Energy: E = P * t.  The energy is the real power times the time interval it is used, accumulated over time.
 		Measured in kWh (kilo Watt hour) units. 
-	4) The electrical devices connected to the local DB (Distribution Board), plugged in will then 
-		use this generated current in preference to the grid current.
-		The currents are balanced by OHM's law and the generated current will thus lower or replace
+		If a kettle of 2kW takes 3 minutes to boil, the energy used is 0.1kWh.  
+	4) The electrical devices connected to the local DB (Distribution Board), thus plugged in and switched on, 
+		will then use this locally generated current in preference to the grid current.
+		The currents are balanced by Ohm's law and the generated current will thus lower or replace
 		the current from the grid while generating (sun shining).
 	5) Less energy is used from the grid and this will immediately result in a lower energy bill from the authority.
 	6) The reduction in the energy bill from the Authority is used for calculating the payback or break-even period.
@@ -98,7 +118,13 @@ d) Electrical Operation:
 		until parity is reached.
 		The pay-back period is usually in region of five years, where after all the energy generated, less a few 
 		percent for maintenance cost, for the life of the installation, about 25 years, is for full profit.
-
+	7) The Smart Energy Director and its auxiliary will ensure that the Smart Micro Inverters never power the grid
+		(reverse power flow) by forcing the solar micro inverters off their optimal operation point.
+		When there is a grid power outage the main switch will automatically open to isolate the DB from
+		the grid and thus keep on delivering power to the load (home, shop or office). 
+		Some loads might need to be automatically switched off at the same time to ensure that the available power 
+		is more than the total load power of all devices connected or else a supply collapse will ensue.
+		
 e) Using new ARM cortexM4 processors
 	1) Uses CENELEC B & C or FCC band ITU G.9903 G3-PLC (power-line communications) for sync & SCADA functions.
 	2) Do all power conversions needed, extensive use of digital signal processing.

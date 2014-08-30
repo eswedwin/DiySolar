@@ -55,3 +55,9 @@ b) Installation [lifetime = 25y] costs:
 		3.6		 80		16000	 8000		 7500		14400 + 4800	51000		110000
 		5.4		120		24000	12000		10000		21600 + 7200	75000		165000
 		
+Tshwane tariff 2014/15
+domestic :  R1.295633 (ex VAT)/kWh for first 650kWh/m (R842.16)
+			R1.472300 (ex Vat)/kWh for rest
+			R1.678422 /kWh @ margin
+			R1.61 /kWh average @ 1950kWh/m
+			
