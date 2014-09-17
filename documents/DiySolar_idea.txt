@@ -3,9 +3,9 @@ ESW:				ElectroSolarWare.
 Title:				DiySolar idea.
 Conception : 		25/04/2014.
 First iteration: 	26/06/2014.
-This document: 		27/08/2014.
+This document: 		17/09/2014.
 Author: 			Edwin
-Version: 			0.11
+Version: 			0.12
 
 DiySolar main ideas:
  
@@ -15,43 +15,43 @@ a) Smart Micro Inverters to directly convert DC to correct AC for line/grid. (Di
 		DIY, thus much lower installation & maintenance costs.
 	2) Easy mix and match - actual P&P (plug and play).
 	3) Smart because the geek is built into the unit software and the user does not have to be one.
-	4) Any solar voltaic panels can be accommodated and matched.
+	4) Any photovoltaic panels can be accommodated and optimally matched.
 		MPPC (maximum power point control) via digital control of all power conversions.
-	5) Series solar voltaic panels combinations possible, limited to maximum power.
-	6) Full safety features in each module for absolute user protection.
+	5) Series photovoltaic panels combinations possible, limited to maximum power.
+	6) Full safety features in each module for absolute user and fire protection.
 		Double insulated for safety.
 		Lightning protected - good rack/frame earthing recommended for user safety.
 		Manual boot connection (break-before-make) for standalone start or registering.
 		Impedance check for manual start - before power for safety.
 		Zero load shut-down for safety. (0.1% minimum load = 2mA)
-	7) Internal power, current and temperature limited for self protection.
-	8) Default single phase (1ph) 50Hz and 230VAC (volt alternating current).
+	7) Internal power, current and temperature limited for self protection and preservation.
+	8) 460W maximum power gives up to 2A in-phase injected into 230VAC supply. (Watch maximums per circuit here.)
+	9) Default single phase (1ph) 50Hz and 230VAC (volt alternating current).
 		Three phase (3ph) on each of three phases with no need to balance. (See Energy Director below.)
-	9) 460W maximum power = 2A in-phase injected into 230VAC supply.
-	10) All communications to cloud, no operator keyboard or display - uses on-line browser or mobile application.
-	11) Each unit unique address and completely controllable.
-	12) Complete SW solution with automatic reprogramming from cloud.
-	13) Full access control with 128bit AES encryption throughout.
-	14) IP67 enclosures for mounting on bottom inside of panel frames directly.
-	15) 95% efficiency at full power, > 90% at half power.
-	16) Each unit continuously monitors currents and voltages, in and out.
-	17) Efficiency, power flow from each unit calculated, accumulated and metered.
-	18) Standalone operation - any unit can become master when there is no Energy Director in use.
-	19) Master unit then controls all others on the local network with the same login/password.
-	20) Automatic configuration to any world standard 50 or 60Hz, 115V or 230V single phase, or 400V 3-phase.
+	10) Automatic configuration to any world standard 50 or 60Hz, 115V or 230V single phase, or 400V 3-phase.
+	11) All communications to cloud, no operator keyboard or display - uses on-line browser or mobile application.
+	12) Each unit has an unique MAC (Media Access Control) address and is completely controllable.
+	13) Complete SW solution with automatic reprogramming from cloud.
+	14) Full access control with 128bit AES encryption throughout.
+	15) IP67 enclosures for mounting on bottom inside of panel frames directly.
+	16) 95% efficiency at full power, > 90% at half power.
+	17) Each unit continuously monitors all currents and voltages, in and out.
+	18) Efficiency and power flow from each unit calculated, accumulated and metered.
+	19) Standalone operation - any unit can become master when there is no Energy Director in use.
+	20) Master unit then controls all others on the local network with the same login/password.
 	21) Many extension and support modules for future expansion (see modules tab/file). 
 	22) DIYS Modules: DIYS [-SED] [-SEDA] [-SBMI] [-SWMI] [-SECI] [-SLC].
 
 b) Ideal for:
 	1) Making hay while the sun shines - literally! 
-	2) SOHO (small office, home office) where most of the energy used is during the day.
+	2) SOHO (small office, home office) where most of the energy used is during the work day.
 	3) Small retail when keeping to office/daylight hours. (Lights, display boards, tills)
 	4) Small manufacturing (not energy intensive) with lights and small appliances.
 	5) 1.8kW to 3.6kW peak single phase (optimal range (10-20m2) for initial installation).
 	6) 5.4kW to 11kW peak three phase (optimal range (30-60m2) for initial installation).
-	7) With incremental installation both can be extended infinitely.
+	7) With incremental installation both can be extended indefinitely.
 	8) Off-grid (where grid power unavailable) for schools and other education in rural Africa.
-	9) Off-grid small retail. (like fridges where good insulation retains temperature during night)
+	9) Off-grid small retail. (Like fridges where good insulation retains temperature during night.)
 	10) Homes with swimming-pools. (Pump runs 8h during day-time.)
 	11) Homes with air-conditioning and/or underfloor heating. (Stays on during day for thermostat control.)
 	12) Saving our planet a little bit at a time.  Burn less coal and other fossil fuels.
@@ -87,41 +87,58 @@ c) Limitations:
 		Wind loading an important consideration for frame or rack on roof.
 		Extra loading on roof must be taken into account.
 	7) Maximum of 5 units per extension cord (10A) and 10 units total on one plug circuit (20A).
-	8) 25 Years life and 5-6 year payback for solar voltaic panel alone.
-	9) Allow for 5% of initial cost as maintenance cost pa. (10% with batteries.)
-	10) Batteries more than triple cost and size of initial installation.
-		Double the number of panels needed plus batteries to store the energy for 12 hours of operation.
+	8) 30 Years life and 5-6 year payback for installation with normal tariff.
+	9) Allow for 2.5% of initial cost as maintenance cost pa. (cleaning, washing and painting) (Escalated with inflation.)
+	10) Allow for 2.0% of initial cost as insurance cost pa. (Hail and theft.) (Escalated with inflation @ 6.5%.)
+	11) NPV (nett present value) calculations with 10% fixed rate of return with the above costs and life at 
+		8% electricity tariff escalation and 0.89% panel efficiency degradation (80% at 25y) gives: 
+		NPV = 196%(nor) and 104%(tou) of installed cost over 30y life.
+		System is written off completely after 30 years. (Removed and recycled/deposed of safely at zero cost).
+		Estimated tou (time-of-use) tariffs used at known industrial tariffs + 40% for SOHO application.
+		Break even (zero NPV) at 8y for normal and 12y for tou tariffs. (See PV_tou.ipynb.)
+		The above forces a very long time horizon for very good returns.
+		Could easily be moved as it is not a fixture. Maybe a new rack or frame needed for re-installation.
+		Should increase resale value of building if left in place. (NPV can be calculated for remaining life.) 
+	12) Insolation: amount of sun over one year given in kWh/m^2 (usually average of ten year period.)
+		Durban: < 1600, Pretoria < 2100 & Lusaka < 2200, Titled photovoltaic panels changes this + or -, thus watch.
+		The maximum energy for one year for a horizontal PV panel is limited to 17%(efficiency) of 2000 = 340kWh/m^2.
+	13) Batteries more than triple cost, complexity and size of initial installation.
+		Double the number of panels needed plus batteries to store the energy for 6 extra hours of operation.
 		Double the above again for 24h constant load operation with no cloudy backup.
 		Batteries have a very limited life of 5 to 7 years and then need replacement.
-		Batteries need lots of maintenance and 3 to 4 replacements during life of system.
+		Batteries need lots of maintenance and 4 to 5 replacements during life of system.
+		Allow for 5% of initial cost as maintenance cost pa. (cleaning, washing and painting) (Escalated with inflation.)
 		The above pushes the lifetime cost to nearly (or to more than, dependant on function,) 
 		double the initial cost with batteries.
 		This will push the payback period (cost parity with grid power) to infinity. 
+		NPV stays below ZERO.
 
 d) Electrical Operation:	
 	1) Smart Micro Inverters automatically generate current in-phase with the voltage 
 		from the AC (Alternating Current) grid from the authorities. (Co-generation for local consumption.)
 	2) Power: P = V * I.  The real power supplied or delivered is the current times the voltage. (Dependent on direction.) 
 		Measured in Watt of kW (kilo Watt = 1000W). 
-		For AC when in-phase and using RMS (Root Mean Squared) measurements.
-		When out of phase it is called apparent power and measured in kVA (kilo Volt Ampere).
+		For AC real power is in-phase and using RMS (Root Mean Squared) measurements.
+		When out of phase it is split in two with a in-phase and out-of-phase components
+		it is then called apparent power and measured in kVA (kilo Volt Ampere).
 	3) Energy: E = P * t.  The energy is the real power times the time interval it is used, accumulated over time.
 		Measured in kWh (kilo Watt hour) units. 
-		If a kettle of 2kW takes 3 minutes to boil, the energy used is 0.1kWh.  
+		If a kettle with a 2kW heater element takes 3 minutes to boil, the energy used is 0.1kWh.  
 	4) The electrical devices connected to the local DB (Distribution Board), thus plugged in and switched on, 
 		will then use this locally generated current in preference to the grid current.
 		The currents are balanced by Ohm's law and the generated current will thus lower or replace
 		the current from the grid while generating (sun shining).
 	5) Less energy is used from the grid and this will immediately result in a lower energy bill from the authority.
-	6) The reduction in the energy bill from the Authority is used for calculating the payback or break-even period.
-		The full cost of the installation is traded off against the energy costs from the authority with escalation, 
-		until parity is reached.
+	6) The reduction in the energy bill from the Authority is used for calculating the NPV break-even or payback period.
+		The NPV (nett present value) calculation gives the best indication of the profitability over its long life time.
+		The full cost of the installation is traded off against the energy savings at the authority tariffs with escalation, 
+		with running costs subtracted, converted to present value at rate of return, until parity is reached.
 		The pay-back period is usually in region of five years, where after all the energy generated, less a few 
-		percent for maintenance cost, for the life of the installation, about 25 years, is for full profit.
+		percent for maintenance and insurance cost, for the life of the installation, about 30 years, is for full profit.
 	7) The Smart Energy Director and its auxiliary will ensure that the Smart Micro Inverters never power the grid
 		(reverse power flow) by forcing the solar micro inverters off their optimal operation point.
-		When there is a grid power outage the main switch will automatically open to isolate the DB from
-		the grid and thus keep on delivering power to the load (home, shop or office). 
+		When there is a grid power outage, the main switch will automatically open to isolate the DB from
+		the grid and thus keep on delivering power to the load (home, shop or office). (Forced Islanding.) 
 		Some loads might need to be automatically switched off at the same time to ensure that the available power 
 		is more than the total load power of all devices connected or else a supply collapse will ensue.
 		
