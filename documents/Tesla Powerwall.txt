@@ -1,0 +1,7 @@
+Power, Eishkom
+
+lets' say Mdupi cost R128bn (its going to be more than this with all the delays, at the moment R150bn and rising)
+One tesla Powerwall battery cost R42000.00 ($3500.00 for 10KWh)
+thus we could buy 3.2M tesla batteries for this money. (2KW continuous each)
+with a total supply shifting capability of 6.4GW (mdupi total base load 4.8GW.)
+

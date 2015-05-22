@@ -3,90 +3,103 @@ ESW:				ElectroSolarWare.
 Title:				DiySolar idea.
 Conception : 		25/04/2014.
 First iteration: 	26/06/2014.
-This document: 		17/09/2014.
+This document: 		20/05/2015.
 Author: 			Edwin
 Version: 			0.12
 
 DiySolar main ideas:
  
-a) Ideal for making hay while the sun shines - literally! 
+a) Ideal for the following applications: 
 	1) SOHO (small office, home office) where most of the energy used is during the work day.
 	2) Small retail when keeping to office/daylight hours. (Lights, display boards, tills)
-	3) Small manufacturing (not energy intensive) with lights and small appliances.
-	4) 1.8kW to 3.6kW peak single phase (optimal range (10-20m2) for initial installation).
-	5) 5.4kW to 11kW peak three phase (optimal range (30-60m2) for initial installation).
-	6) With incremental installation both can be extended indefinitely.
+	3) Small manufacturing and repair (not energy intensive) with lights and small appliances.
+	4) Optimum size for initial single phase installation: 1.8kW to 3.6kW peak. (10 to 20m^2 panel area.)
+	5) Optimum size for initial three phase installation: 5.4kW to 11kW peak. (30 to 60m^2 panel area.)
+	6) With incremental installation these can be extended indefinitely.
 	7) Off-grid (where grid power unavailable) for schools and other education in rural Africa.
 	8) Off-grid small retail. (Like fridges where good insulation retains temperature during night.)
 	9) Homes with swimming-pools. (Pump runs 8h during day-time.)
-	10) Homes with air-conditioning and/or underfloor heating. (Stays on during day for thermostat control.)
-	11) Saving our planet a little bit at a time.  Burn less coal and other fossil fuels.
+	10) Homes with air-conditioning and/or underfloor heating. (Stays on during day with thermostat control.)
+	11) Saving our planet a little bit at a time.  Burn less coal and other fossil fuels.  Making hay while the sun shines.
 
-b) Smart Micro Inverters to directly convert DC to correct AC for line/grid. (DiySolar-SMI module.)
-	1) Standard plug into Mains supply socket on any local circuit. 
-		RSA - IEC N-Type (international standard from 1986) with 2 to 3m leads available.
+b) Manufacture Smart Micro Inverters:
+	1) DiySolar-SMI modules directly convert any photovoltaic DC power to correct AC power for line/grid.
+	2) Standard plug into power (mains supply) socket on any local plug circuit.
+		Stays off until plugged in, with immediate shut down on plug out.
+		RSA - IEC N-Type (international standard from 1986) with 2.5m leads available.
+	3) Easy mix and match with actual P&P (plug and play).
 		DIY, thus much lower installation & maintenance costs.
-	2) Easy mix and match - actual P&P (plug and play).
-	3) Smart because the geek is built into the unit software and the user does not have to be one.
-	4) Any photovoltaic panels can be accommodated and optimally matched.
+		No electrician needed.
+		Smart because the expert is built into each unit.
+	4) Any photovoltaic panels can be accommodated and are optimally matched with minimum 95% energy efficiency.
 		MPPC (maximum power point control) via digital control of all power conversions.
-	5) Series photovoltaic panels combinations possible, limited to maximum power.
-	6) Full safety features in each module for absolute user and fire protection.
+		Standard photovoltaic MC4 male and female connectors on module for foolproof panel connections.
+		Second set of above connectors for second panel with automatic series or parallel connection for MPPC.
+	5) Series (same) photovoltaic panels input combinations possible, limited to maximum voltage and power.
+	6) Full safety features in each module for absolute user- and fire protection.
 		Double insulated for safety.
-		Galvanic isolation from line voltage.
+		Galvanic isolation of panel from line voltage.
 		Lightning protected - good rack/frame earthing recommended for user safety.
 		Manual boot connection (break-before-make) for standalone start or registering.
-		Impedance check for manual start - before power for safety.
-		Immediate Zero load shut-down for safety. (0.1% minimum load = 2mA)
+		Impedance check before manual start, before any power delivery, for safety.
+		Immediate Zero-load shut down for safety. (6% minimum load, 30W = 120mA RMS)
 	7) Internal power, current and temperature limited for self protection and preservation.
-	8) 460W maximum power gives up to 2A in-phase injected into 230VAC supply. (Watch maximums per circuit here.)
+	8) Electrical 460W maximum power gives up to 2A in-phase injected into 230VAC supply. 
+		More than 95% efficiency at full power and more than 94% at one third power.
+		Maximum of 5 units per extension cord (10A - 2.3kW).
+		Maximum 10 units total on one local plug circuit (20A - 4.6kW).
 	9) Default single phase (1ph) 50Hz and 230VAC (volt alternating current).
 		Three phase (3ph) on each of three phases with no need to balance. 
 		See Smart Energy Director description in DiySolar Modules documentation.
 	10) Automatic configuration to any world standard 50 or 60Hz, 115V or 230V single phase, or 400V 3-phase.
-	11) All communications to cloud, no operator keyboard or display - uses on-line browser or mobile application.
+		Cheap, standard, locally available AC appliances are all compatible with system.
+	11) All communications with PLC (power line communications) between all modules.
+		No operator keyboard or display, just two LED's on each module for status indication.
+		Uses Smart Gateway to interface PLC to Ethernet 100Mb Switch (802.3). (DiySolar Modules documentation.)
+		Access configuration and data with on-line browser or mobile application.
 	12) Each unit has an unique MAC (Media Access Control) address and is completely controllable.
-	13) Complete SW solution with automatic reprogramming from cloud.
-	14) Full access control with 128bit AES encryption throughout.
-	15) IP67 enclosures for mounting on bottom inside of panel frames directly.
-	16) 95% efficiency at full power, > 90% at half power.
-	17) Each unit continuously monitors all currents and voltages, in and out.
-	18) Efficiency and power flow from each unit calculated, accumulated and metered.
-	19) Standalone operation - any unit can become master when there is no Energy Director in use.
-	20) Master unit then registers and controls all others on the local network with the same login/password.
-	21) Many extension and support modules for future expansion (see modules tab/file). 
-	22) DiySolar Modules: DIYS [-SED] [-SEDA] [-SBMI] [-SWMI] [-SECI] [-SLC].
+	13) Full access control with 128bit AES encryption throughout.
+	14) Complete SW solution with automatic updates and reprogramming from cloud.
+	15) Each unit continuously monitors all currents and voltages, in and out.
+		Efficiency and power flow from each unit calculated, accumulated and metered.
+	16) Standalone operation - any unit can become master when there is no Energy Director in use.
+	17) Master unit then registers and controls all others on the local network with the same login/password.
+	18) IP67 enclosures for mounting on bottom inside of panel frames directly.
+	19) Many extension and support modules for future expansion. (See modules tab/file.) 
+		Other DiySolar modules: DIYS [-SED] [-SEDA] [-SBMI] [-SWMI] [-SECI] [-SLC].
 
-c) Limitations:
-	1) Needs full sun for whole day during winter and summer.
-		Position for same peak or day power on winter and summer solstice.
-		Gives double sine curve with 6 month period and peaks (17% higher) on the equinoxes.
+c) Limitations of photovoltaic (PV) systems:
+	1) Needs full sun for whole day, during winter and summer.
+		Positioning possible for same peak or day power on winter and summer solstice.
+		Gives double sine power curve with 6 month period and peaks (17% higher) on the equinoxes.
 		Use application calculator to get optimal inclination (angle) for yearly power optimisation for application.
 		Tilt towards winter sun by positive latitude plus 10 degrees from horizontal for even performance during year.
-		Roof mounting optimal for many reasons except for ease of maintenance and installation.
+		Roof mounting optimal for many reasons, except for ease of maintenance and installation.
 		Must be true North/South facing dependent on +/- latitude. (Always facing equator at right angles.)
 		Little bit West facing to have more power in the afternoon (15 degrees for each hour shift.) 
 		Little bit East facing to have more power in the morning to substitute time-of-use peak tariffs in high demand season.
 		Both the above tilts reduces total yearly energy depending on the amount of tilt.
 	2) Usable energy mostly between 9:00 and 15:00 with the above conditions fulfilled.
-		Little bit longer (-/+30 minutes) use in summer because of better angles and less AM (Air Mass).
+		Little bit longer use in summer (-/+30 minutes) because of better angles and less AM (Air Mass).
 		This will limit the effectiveness for normal homes where there is little energy use during the work day.
-	3) Performance very dependant on latitude with sunny tropics and sub-tropics the most profitable.
+	3) Performance very dependant on latitude with sunny sub-tropics the most profitable.
 		Cloudiness makes the tropics less profitable that the sub-tropics. 
-	4) Insolation is the total amount of sun energy over one year given in kWh/m^2 (usually average of ten year period).
+	4) Insolation is the total amount of received sun energy over one year given in kWh/m^2.
+		Usually it is the average of ten year period.
 		Examples from SolarGIS Map Southern Africa: Durban < 1600, Pretoria < 2100 & Lusaka < 2200 kWh/m^2/year.
 		Titled photovoltaic panels changes this + or -, thus watch.
-		The maximum energy for one year for a horizontal PV panel is limited to 17%(efficiency) of 2000 = 340kWh/m^2.
-		Tilted with latitude degrees the maximum energy for same PV panel = 430kWh/m^2 because larger area is exposed.
-		With reflections for glass and silicon this then drops to 416kWh/m^2.
-	5) Rotating on daily axis (parallel to earth axis) improves total yearly energy by about 17%.
-		Needs at least double spacing to eliminate most shadows.
-		Double the area and frame used for installation.
-		Targeted applications thus not ideal because of the waste of the, ideal but limited, roof space.
+		The total energy for one year for a horizontal PV panel is limited to 18%(example efficiency) of 2000 = 360kWh/m^2.
+		Tilted with the latitude degrees, the total yearly energy for same PV panel becomes 455kWh/m^2. (Extra 26%)
+		With reflections for glass and silicon at greater angles the total then drops to a realistic 440kWh/m^2. (Extra 22%)
+		The tilt causes, on average, a larger area to be exposed to the sun but watch out for shadows from the front panels.
+	5) Rotating on daily axis (parallel to earth axis) improves total yearly energy yield by about 17%.
+		Needs at least double spacing to eliminate most shadows and thus much more roof space.
+		Double the roof area and frame/racking used for installation.
+		Targeted applications thus not ideal because of the waste of, the ideal but limited, roof space.
 		Mechanical devices (hinges and actuators) and electronic controls needed.
 		Service life, servicing and maintenance of the above can be problematic and expensive.
-	6) Rotation on daily and yearly axes improves total yearly yield by about 25% to 35% depending spacing.
-		Needs more than double spacing to eliminate most shadows. (3.0 times panel area.)
+	6) Rotation on both daily and yearly axis improves total yearly yield by about 25% to 35% depending spacing.
+		Needs more than double spacing to eliminate most shadows. (2.5 to 3.0 times panel area.)
 		Double the mechanical devices needed to control the two axes.
 		Other disadvantages as mentioned above for single axis rotation.
 	7) Big area installation. 
@@ -96,32 +109,36 @@ c) Limitations:
 		Most roofs already slope in the direction of the winter sun. 
 		Wind loading an important consideration for frame or rack on roof.
 		Extra loading on roof must be taken into account.
-	8) Electrical: Maximum of 5 units per extension cord (10A - 2.3kW).
-		Maximum 10 units total on one plug circuit (20A - 4.6kW).
-	9) Photovoltaic panels: 30 Years life with 80% of original efficiency left after 25 years. 
-		Minimum 4-6 year payback for installation with normal tariff and good insolation.
-	10) Allow for 2.5% of initial cost as maintenance cost pa. (cleaning, washing and painting) (Escalates with inflation.)
-	11) Allow for 2.0% of initial cost as insurance cost pa. (Hail and theft.) (Escalates with inflation @ 6.5%.)
-	12) NPV (nett present value) calculations with a high 10% fixed rate of return with the above costs and life 
-		at 8% electricity tariff escalation and 0.89% panel efficiency degradation (80% at 25y) gives: 
-		System is written off completely after 30 years. (Removed and recycled/deposed of safely at zero cost).
-		NPV = 196%(normal) and 104%(tou) of installed cost over 30y life.
-		Estimated tou (time-of-use) tariffs used at known industrial tariffs + 40% for SOHO application.
-		Break even (zero NPV) at 8y for normal and 12y for tou tariffs. (See PV_tou.ipynb.)
+	8) Photovoltaic panels: 30 Years life with 80% of original efficiency remaining after 25 years. 
+		Maximum 6 to 7 year payback for installation with normal tariff and good insolation.
+	9) Allow for 2.5% of initial cost as maintenance cost pa. (cleaning, washing and painting) (Escalates with inflation.)
+	10) Allow for 2.0% of initial cost as insurance cost pa. (Hail and theft.) (Escalates with inflation @ 6.5%.)
+	11) NPV (nett present value) calculations with a high 10% fixed rate of return with the above costs and life, 
+		at 8% electricity tariff escalation and 0.89%/y panel efficiency degradation (80% at 25y) gives: 
+		System is written off completely after 25 years. (Removed and recycled/deposed of safely at zero cost).
+		NPV = 74%(normal) and 59%(tou) of installed cost over 25 year life. (21% extra over next 5 years.)
+		Estimated tou (time-of-use) tariffs used at known industrial tariffs + 43% for SOHO application.
+		Break even (zero NPV) at 12.5y for normal and 15y for tou tariffs. (See PV_tou.ipynb.)
 		The above forces a very long time horizon for good returns.
-	13)	Installation could easily be moved as it is not a fixture. Maybe a new rack or frame needed for re-installation.
+	12)	Installation could easily be moved as it is not a fixture. Maybe a new rack or frame needed for re-installation.
 		Should increase resale value of building if left in place. (NPV can be calculated for remaining life.)
 		Worst case from above shows that the installation can at least be replaced, after its life, from the savings. 
-	14) Batteries more than triple cost, complexity and size of initial installation.
-		Double the number of panels needed plus batteries to store the energy for 6 extra hours of operation.
-		Double the above again for 24h constant load operation with no cloudy backup.
-		Batteries have a very limited life of 5 to 7 years and then need replacement.
-		Batteries need lots of maintenance and 4 to 5 replacements during life of system.
+	13) Tesla Powerwall or Lead-acid battery backup more than doubles cost, complexity and size of initial installation.
+		Thirty percent less initial capital needed for Lead-acid than with Powerwall but NPC (lifetime) more than doubles.
+		Grid operation (TOU) for least cost with best continuity, the PV and battery capacity must be the same. (2 * cost)
+		Payback maximum with incoming supply shifting away from peak-tariffs to off-peak and PV during normal.
+		Double the number of panels needed plus battery to store the energy for 6 extra hours of operation. (3 * cost)
+		Triple the panels and double battery needed for 12h full load daytime and 12h half load night time. (5 * cost)
+		Four times panels and triple battery needed for 24h constant load operation with no cloudy backup. (7 * cost)
+		Lead-acid batteries have a very limited life of 5 to 7 years and then need replacement.
+		Lead-acid batteries need lots of maintenance and 4 to 5 replacements during life of system.
 		Allow for 5% of initial cost as maintenance cost pa. (cleaning, washing and painting) (Escalated with inflation.)
-		The above pushes the lifetime cost to nearly (or to more than, dependant on function,) 
+		The above pushes the NPC (lifetime) for Lead-acid to nearly (or to more than, dependant on function,) 
 		double the initial cost with batteries.
 		This will push the payback period (cost parity with grid power) to infinity. 
-		NPV stays below ZERO.
+		NPV stays below ZERO for the lifetime of the system.
+		Lead-acid Size: 140Ah - 12V, needed for 1kWh(average over 5 years) backup. 
+		(15% losses, 80% discharge, 75% (3/4) capacity remaining after 5y (1500 cycles).)(calc factor 8.2Wh/Ah)
 
 d) Electrical Operation:	
 	1) Smart Micro Inverters automatically generate current in-phase with the voltage 
@@ -132,11 +149,12 @@ d) Electrical Operation:
 		Dependent on direction of the current the power is supplied or consumed.
 		Measured in Watt of kW (kilo Watt = 1000W). 
 		For AC the real power is in-phase and using RMS (Root Mean Squared) measurements.
-		AC apparent power is of-phase and measured in kVA (kilo Volt Ampere).
-		When of-phase it can be split in two with a in-phase (kW) and 90 degree out-of-phase (kVAr) components.
+		AC power (of-phase) is measured in kVA (kilo Volt Ampere).
+		AC apparent power is out-of-phase and measured in kVAr (kilo Volt Ampere reactive).
+		When of-phase it can be split in two with a in-phase (kW) and 90 degree out-of-phase (reactive) (kVAr) components.
 	3) Energy: E = sum(P * t).  The energy is the real power times the time interval it is used, accumulated over time.
-		Measured in kWh (kilo Watt hour) units. 
-		If a kettle with a 2kW heater element takes 3 minutes to boil, the energy used is 0.1kWh.  
+		Measured in kWh (kilo Watt hour) units. (1J (Joule) = 1Ws (Watt second) and 1000kJ (1MJ) = 0.278kWh)
+		If a kettle with a 2kW heater element takes 3 minutes (1/20 hour) to boil, the energy used is about 0.1kWh.  
 	4) The electrical devices connected to the local DB (Distribution Board), thus plugged in and switched on, 
 		will then use this locally generated current in preference to the grid current.
 		The currents are balanced by Ohm's law and the generated current will thus lower or replace
@@ -146,12 +164,12 @@ d) Electrical Operation:
 		The NPV (nett present value) calculation gives the best indication of the profitability over its long life time.
 		The full cost of the installation is traded off against the energy savings at the authority tariffs with escalation, 
 		with running costs subtracted, converted to present value at rate of return, until parity is reached.
-		The pay-back period is usually in region of five years, where after all the energy generated, less a few 
+		The pay-back period is usually in region of six years, where after all the energy generated, less a few 
 		percent for maintenance and insurance cost, for the life of the installation, about 30 years, is for full profit.
 	7) The Smart Energy Director and its auxiliary will ensure that the Smart Micro Inverters never power the grid
 		(reverse power flow) by forcing the solar micro inverters off their optimal operation point.
-		When there is a grid power outage, the main switch will automatically open to isolate the DB from
-		the grid and thus keep on delivering power to the load (home, shop or office). (Forced Islanding.) 
+	8) When there is a grid power outage, the main switch will automatically open to isolate the DB from
+		the grid and thus keep on delivering power to the load (home, shop or office). (UPS function with Forced Islanding.) 
 		Some loads might need to be automatically switched off at the same time to ensure that the available power 
 		is more than the total load power of all devices connected or else a supply collapse will ensue.
 		

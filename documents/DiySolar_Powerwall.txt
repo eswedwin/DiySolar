@@ -1,0 +1,45 @@
+DiySolar:			Do-it-yourself [Smart] Solar.
+ESW:				ElectroSolarWare.
+Title:				Tesla Powerwall idea.
+Conception : 		15/05/2015.
+First iteration: 	15/05/2015.
+This document: 		20/05/2015.
+Author: 			Edwin
+Version: 			0.10
+
+Tesla Powerwall main ideas:
+
+	Tesla's new Powerwall battery system is specified at 10kWh capacity with 2kW maximum supply capability each.
+	Ten year guarantee (extendible to 20 years) and an overall efficiency of 91% including charger and inverter.
+	Cost are now $3500 or R42000 at the current exchange rates. 
+	Instantaneous switching from charging to supplying depending on energy cost and charge balance.  
+	Supply shifting is charging with off-peak energy and co-supplying during peak energy tariffs where TOU tariffs are used.
+	Supply shifting gives a payback period of less than ten years for the above targeted applications on its own.
+	The battery also functions as backup during blackout periods in manual mode.
+	It can be an UPS (Un-interruptible Power Supply) in automatic mode.
+	For a very reliable UPS extra investment in automatic grid disconnect and load shedding switches will be needed.
+	For the above targeted applications it will smooth out PV generation and demand peaks automatically.
+	The DiySolar Smart Energy Director will ensure optimal payback period with a set blackout supply reliability.
+	Makes use of cloud connection weather (insolation) prediction to minimise charging from grid.
+	a) For optimum continuity of supply in grid (TOU) connected day-time applications:
+		Battery supply should be the same as PV supply.
+		Use PV to supply power during peak and normal tariff periods.
+		Charge battery from grid with off-peak tariffs. (score difference between normal and off-peak tariffs)
+		Recharge batteries from excess PV, during low demand and high insolation, for maximum continuity.
+		Use batteries to co-supply during peak-tariff periods and dips in insolation during normal tariff.
+		Use batteries as supply during blackouts. (Backup function for continuity.)
+		Costs nearly double of just PV of same capacity but payback with TOU tariffs the same.
+	b) For least energy cost from the grid or off-grid in the above targeted applications: (daylight only)
+		PV supply should be double of battery supply or system capacity.
+		Charge with PV and use PV at same rate, then used battery supply to double sun hours.
+		Smoothing capability: allowable peak demand is three times average demand while sun shines.
+		Costs nearly three times as much as only PV supply. (need to charge batteries from PV)
+	c) For 12hour-full and 12h-half supply in off-grid applications.
+		PV supply should be three times and battery supply twice the system capacity.
+		Smoothing capability: allowable peak demand is five times average demand while sun shines.
+		and twice system capacity with no sun.
+		Costs nearly five times as much as only PV supply. (need to charge batteries (6h + 12h*0.5 supply) from PV in six hours)
+	d) For 24hour constant supply in off-grid applications.
+		PV supply should be four times and battery supply three times the system capacity.
+		Smoothing capability: allowable peak demand is seven times average demand while sun shines.
+		Costs nearly seven times as much as only PV supply. (need to charge batteries (18h supply) from PV in six hours)
